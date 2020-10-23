@@ -1,8 +1,7 @@
 # Author: Brayan Castro Lugo
-# Class: COMP 141
-# Program 5: Rhodes Rumbles
-# Pledge: I have neither given nor received unauthorized aid on this program. 
-# Description: This program runs a game in which there are two players who begin with a pile of 21 stones. Each player take turns. Each turn, a player may take either one, two or three stones. They must take at least one stone, and cannot take more than three stones. The player who takes the final stone loses the game
+# Program: Nims Rumble
+# Description: This program runs a game in which there are two players who begin with a pile of 21 stones. Each player take turns. 
+#  Each turn, a player may take either one, two or three stones. They must take at least one stone, and cannot take more than three stones. The player who takes the final stone loses the game
 
 
 #Step 1: Is the game over?
@@ -17,8 +16,6 @@ def is_game_over(stones):
     return False
   
   
-  
-  
 #Step 2: Who is the next player?  
 #This function takes in the current player's name and returns the next players name.
 #Parameter: currentPlayer, a string representing who is currently taking a turn 
@@ -30,9 +27,7 @@ def next_player(currentPlayer):
     else:
         return "Tony"
       
-      
-      
-      
+           
 #Step 3: How many stones do you want to take?
 #This functionasks how many stones a player wants to take. The player must take at least one stone and can take at most three, but cannot take more stones than are left. If the user enters an invalid number of stones, a helpful error message appears and ask the user again.
 #Parameter: currentPlayer, the name of the player whose turn it is
@@ -54,8 +49,6 @@ def get_choice (currentPlayer, stones):
       continue
     else:
       return picked_stones
-    
-    
     
     
 #Step 4: Putting it all together   
